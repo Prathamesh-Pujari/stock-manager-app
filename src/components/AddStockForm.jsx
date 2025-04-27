@@ -23,7 +23,7 @@ const AddStockForm = ({ ingredients, setIngredients }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-6 max-w-md">
+    <form onSubmit={handleSubmit} className="space-y-6 w-full">
       <div>
         <label className="block text-sm mb-2">Select Ingredient</label>
         <select
@@ -55,7 +55,7 @@ const AddStockForm = ({ ingredients, setIngredients }) => {
         type="submit"
         className="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded"
       >
-        ➕ Add Stock
+        Add Stock
       </button>
     </form>
   );
