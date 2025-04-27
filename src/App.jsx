@@ -1,9 +1,9 @@
 import { useState } from "react";
-import "./index.css";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Home from "./pages/Home";
 import AddStock from "./pages/AddStock";
 import ingredientsData from "./data/ingredients";
+import "./App.css";
 
 function App() {
   const [ingredients, setIngredients] = useState(ingredientsData);

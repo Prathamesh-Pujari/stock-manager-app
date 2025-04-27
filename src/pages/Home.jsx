@@ -3,7 +3,7 @@ import StockTable from "../components/StockTable";
 
 const Home = ({ ingredients }) => {
   return (
-    <div className="bg-zinc-900 min-h-screen text-white">
+    <div className="bg-zinc-900 min-h-screen">
       <StockTable ingredients={ingredients} />
     </div>
   );

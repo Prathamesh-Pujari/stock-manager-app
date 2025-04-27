@@ -3,11 +3,16 @@ import AddStockForm from "../components/AddStockForm";
 
 const AddStock = ({ ingredients, setIngredients }) => {
   return (
-    <div className="bg-zinc-900 min-h-screen text-white p-6">
-      <h1 className="text-3xl font-bold mb-4 text-zinc-100">
-        📥 Add Ingredient Stock
-      </h1>
-      <AddStockForm ingredients={ingredients} setIngredients={setIngredients} />
+    <div className="add-stock-container bg-zinc-900">
+      <div className="max-w-md w-full p-8 bg-zinc-800 rounded-lg shadow-lg text-white">
+        <h1 className="text-3xl font-bold mb-6 text-center">
+          📥 Add Ingredient Stock
+        </h1>
+        <AddStockForm
+          ingredients={ingredients}
+          setIngredients={setIngredients}
+        />
+      </div>
     </div>
   );
 };
